@@ -8,7 +8,7 @@ public class RelationalOperator {
 		int b=7;
 		
 		System.out.println("Lessthan :"+(a<b));
-		System.out.println("LessthanEqual :"+(a<=b));
+		System.out.println("LessthanEqual :"+(a<=b));;
 		System.out.println("notEqual :"+(a!=b));
 		System.out.println("Greaterthan :"+(a>b));
 		System.out.println("GreaterthanEqual :"+(a>=b));
