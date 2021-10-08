@@ -24,7 +24,7 @@ public class Room {
 		System.out.println("Room No :"+isroomno+" Room Type "+roomtype+" Room Area "+roomarea+" AcMachine "+acMachine);
 	}
 	
-	void getData() {
+	public void getData() {
 		System.out.println("Show Data");
 		System.out.println("Room No :"+isroomno+" Room Type :"+roomtype+" Room Area :"+roomarea+" AcMachine :"+acMachine);
 	}
