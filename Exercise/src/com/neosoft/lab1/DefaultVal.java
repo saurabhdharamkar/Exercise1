@@ -1,6 +1,6 @@
 package com.neosoft.lab1;
 
-public class SecondProgram {
+public class DefaultVal {
 
 	
 		   static boolean val1;
