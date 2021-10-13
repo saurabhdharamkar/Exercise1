@@ -7,12 +7,6 @@ public class Room {
 	String roomarea;
 	String acMachine;
 	
-	
-	
-
-
-
-	
 	void setData() {
 		
 		System.out.println("Set Data");
