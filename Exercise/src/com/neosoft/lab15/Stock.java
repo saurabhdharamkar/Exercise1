@@ -26,9 +26,10 @@ public class Stock {
 	 wait(); 
 	 }catch(InterruptedException e) { } 
 	 } 
-	 } / / end of while 
+	 }  
 	 return goods; 
-	 }
+	 
+	}
 
 	public static void main(String args[]) {
 		Stock j = new Stock();
