@@ -1,6 +1,6 @@
 package com.neosoft;
 
-public class ThirdProgram {
+public class StringEqual {
 	
 	static String val1= "Saurabh";
 	static String val2="Saurabh";

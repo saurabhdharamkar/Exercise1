@@ -1,6 +1,6 @@
 package com.neosoft;
 
-public class SecondProgram {
+public class DefaultValue {
 
 	
 		   static boolean val1;
