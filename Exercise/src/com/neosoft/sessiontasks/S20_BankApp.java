@@ -1,10 +1,10 @@
-package com.neosoft.bank;
+package com.neosoft.sessiontasks;
 
 import java.sql.Time;
 import java.util.Date;
 import java.util.Scanner;
 
-public class BankApp {
+public class S20_BankApp {
 	static String name;
 	static String add;
 	static String cno;
@@ -15,7 +15,7 @@ public class BankApp {
 
 	
 
-	public BankApp(String name, String add, String cno,String uname, String pwd, double dep) {
+	public S20_BankApp(String name, String add, String cno,String uname, String pwd, double dep) {
 		super();
 		this.name = name;
 		this.add = add;
@@ -26,7 +26,7 @@ public class BankApp {
 	}
 	
 	
-	public BankApp(int amt) {
+	public S20_BankApp(int amt) {
 		this.amt=amt;
 	}
 
@@ -85,10 +85,10 @@ public class BankApp {
 		System.out.println("Enter Initial Deposit :");
 		double dep=sc.nextInt();
 		
-		BankApp b1=new BankApp(name,add,cno,uname,pwd,dep);
+		S20_BankApp b1=new S20_BankApp(name,add,cno,uname,pwd,dep);
 		main1();
 		
-		BankApp[] bankRecords= {b1};
+		S20_BankApp[] bankRecords= {b1};
 	}else if(choice==2) {
 		
 		System.out.println("Enter Username :");
@@ -100,14 +100,14 @@ public class BankApp {
 		if((pwd1.equals(pwd))&&(uname1.equals(uname))) {
 			
 			System.out.println("Login Successfully");
-			BankApp.main2();
+			S20_BankApp.main2();
 		}else {
 			
 			System.out.println("Invalid Username and Password");
 			System.out.println("Enter password :");
 			String pwd2=sc.next();
 			
-			BankApp.main2();
+			S20_BankApp.main2();
 		
 		}	
 	}else if(choice==3) {
@@ -134,26 +134,26 @@ public class BankApp {
 			if(choice1==1) {
 			System.out.println("Enter amount");
 			int amt=sc.nextInt();
-			BankApp bk1=new BankApp(amt);
-			BankApp.main2();
+			S20_BankApp bk1=new S20_BankApp(amt);
+			S20_BankApp.main2();
 			
 			
 			}if(choice1==4) {
 				System.out.println("Accountholder name :"+name);
 				System.out.println("Accountholer address :"+add);
 				System.out.println("Accountholdercontact :"+cno);
-				BankApp.main2();
+				S20_BankApp.main2();
 			}if(choice1==3) {
 				System.out.println("Rs. "+amt+" credited to your account.Balance Rs. "+amt+" as on"+new Date()+" at "+new Time(choice1));
 				System.out.println("Initial Deposit - Rs"+amt+" as on "+new Date()+" at "+new Time(choice1));
-				BankApp.main2();
+				S20_BankApp.main2();
 			}if(choice1==2) {
 				System.out.println("Enter Payee Username :");
 				String pusername=sc.next();
 				System.out.println("Enter Amount");
 				amt=sc.nextInt();
 				System.out.println("Username does not exist.");
-				BankApp.main2();
+				S20_BankApp.main2();
 			}if(choice1==5) {
 				main1();
 			}
@@ -167,7 +167,7 @@ public class BankApp {
 
 	public static void main(String[] args) {
 		
-		BankApp.main1();
+		S20_BankApp.main1();
 				
 	}
 
